@@ -1,0 +1,29 @@
+[project]
+name = "dgubot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Nathan", email = "nathan.domenichini@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "bs4>=0.0.2",
+    "davey>=0.1.6",
+    "discord-py>=2.7.1",
+    "ntscraper>=0.4.0",
+    "numpy>=2.5.2",
+    "pillow>=12.3.0",
+    "pynacl>=1.6.2",
+    "python-dotenv>=1.2.3",
+    "ruff>=0.16.5",
+    "yt-dlp>=2026.8.19",
+    "ytmusicapi>=1.12.2",
+]
+
+[project.scripts]
+dgubot = "dgubot:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
